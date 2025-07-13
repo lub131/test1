@@ -8,11 +8,11 @@ To edit the fonts for this localization tool:
 
 3. Update your hosted stylesheet to either:
    (A) Use entirely new fonts by repointing the @font-face src urls to your own hosted fonts:
-       @font-face { font-family: 'tiny'; src: url('http:/my-server/fonts/my-tiny.otf'); }
+       @font-face { font-family: 'tiny'; src: url('http:/my-server/fonts/my-tiny.ttf'); }
    -OR-
    (B) Add fallback fonts for a few missing characters by adding new @font-face entries and
        editing the .font- styles to include extra font-family values:
-       @font-face { font-family: 'fallback-tiny'; src: url('http:/my-server/fonts/my-tiny-fallback.otf'); }
+       @font-face { font-family: 'fallback-tiny'; src: url('http:/my-server/fonts/my-tiny-fallback.ttf'); }
        .font-tiny { font-family: 'tiny', 'fallback-tiny'; font-size: 8px; line-height: 8px; }
 
 4. Edit the "Font Stylesheet Override" value in the localization to point to the full 
@@ -36,39 +36,39 @@ Fonts here are used by both the loc tool and the game.
 */
 
 /*---- tiny -------------------------------------------------*/
-@font-face { font-family: 'tiny'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'tiny'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-tiny { font-family: 'tiny'; font-size: 8px; line-height: 8px; }
 
 /*---- small -------------------------------------------------*/
-@font-face { font-family: 'small_tight'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'small_tight'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-small_tight { font-family: 'small_tight'; font-size: 8px; line-height: 8px; }
 
-@font-face { font-family: 'small_harsh'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'small_harsh'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-small_harsh { font-family: 'small_harsh'; font-size: 8px; line-height: 9px; }
 
 /*---- regular -------------------------------------------------*/
-@font-face { font-family: 'regular'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'regular'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-regular, body { font-family: 'regular'; font-size: 8px; line-height: 8px; }
 
-@font-face { font-family: 'regular_short'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'regular_short'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-regular_short { font-family: 'regular_short'; font-size: 8px; line-height: 8px; }
 
 /*---- title -------------------------------------------------*/
-@font-face { font-family: 'title_tall'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'title_tall'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-title_tall { font-family: 'title_tall'; font-size: 16px; line-height: 16px; }
 
-@font-face { font-family: 'title_news'; src: url('https://lub131.github.io/test1/Arapix.otf'); } 
+@font-face { font-family: 'title_news'; src: url('https://lub131.github.io/test1/Arapix.ttf'); } 
 .font-title_news { font-family: 'title_news'; font-size: 16px; line-height: 16px; }
 
-@font-face { font-family: 'title_thick'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'title_thick'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-title_thick { font-family: 'title_thick'; font-size: 14px; line-height: 11px; }
 
 /*---- ui -------------------------------------------------*/
-@font-face { font-family: 'ui_regular'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'ui_regular'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-ui_regular { font-family: 'ui_regular'; font-size: 8px; line-height: 8px; }
 
 /*---- large -------------------------------------------------*/
-@font-face { font-family: 'large'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'large'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-large { font-family: 'large'; font-size: 8px; line-height: 10px; }
 
 /* 
@@ -77,41 +77,41 @@ Fonts below here are used only by the loc tool and don't appear in the game.
 ----------------------------------------------------------------------------------
 */
 
-@font-face { font-family: 'fallback'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'fallback'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 
 /*---- small -------------------------------------------------*/
-@font-face { font-family: 'small'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'small'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-small { font-family: 'small'; font-size: 8px; line-height: 8px;}
 
 /*---- generic serif -------------------------------------------------*/
-@font-face { font-family: 'title_serif'; src: url('https://lub131.github.io/test1/Arapix.otf'); } 
+@font-face { font-family: 'title_serif'; src: url('https://lub131.github.io/test1/Arapix.ttf'); } 
 .font-title_serif { font-family: 'title_serif'; font-size: 10px; line-height: 10px; }
 
 /*---- cursive -------------------------------------------------*/
-@font-face { font-family: 'cursive'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'cursive'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-cursive { font-family: 'cursive'; font-size: 8px; line-height: 8px; }
 
 /*---- scribble -------------------------------------------------*/
-@font-face { /* Sam Derrick */ font-family: 'scribble'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { /* Sam Derrick */ font-family: 'scribble'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-scribble { font-family: 'scribble'; font-size: 16px; line-height: 16px; }
 
 /*---- passport countries -------------------------------------------------*/
-@font-face { font-family: 'passport_arstotzka'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
-@font-face { font-family: 'passport_republia'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
-@font-face { font-family: 'passport_unitedfed'; src: url('https://lub131.github.io/test1/Arapix.otf');}
-@font-face { font-family: 'passport_kolechia'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'passport_arstotzka'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
+@font-face { font-family: 'passport_republia'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
+@font-face { font-family: 'passport_unitedfed'; src: url('https://lub131.github.io/test1/Arapix.ttf');}
+@font-face { font-family: 'passport_kolechia'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 
 /*---- misc -------------------------------------------------*/
-@font-face { font-family: 'press'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'press'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-press { font-family: 'press'; font-size: 22px; line-height: 22px; font-variation-settings: 'wght' 900; }
 
-@font-face { font-family: 'propaganda'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'propaganda'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-propaganda { font-family: 'propaganda'; font-size: 10px; line-height: 10px; }
 
-@font-face { font-family: 'kid_writing'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'kid_writing'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-kid_writing { font-family: 'kid_writing'; font-size: 16px; line-height: 16px; font-weight: bold; }
 
-@font-face { font-family: 'news'; src: url('https://lub131.github.io/test1/Arapix.otf'); }
+@font-face { font-family: 'news'; src: url('https://lub131.github.io/test1/Arapix.ttf'); }
 .font-news { font-family: 'news'; font-size: 23px; line-height: 34px; font-weight: normal; }
 
 body {
