@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ملفات الخط</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <h1>📁 قائمة الملفات</h1>
+  <ul id="file-list">
+    <li>تحميل القائمة...</li>
+  </ul>
+
+  <script>
+    async function listFiles() {
+      const fileList = document.getElementById("file-list");
+      fileList.innerHTML = "";
+
+      try {
+        const res = await fetch(".");
+        const text = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+        const links = Array.from(doc.links);
+
+        links.forEach(link => {
+          const name = link.getAttribute("href");
+          if (name && name !== "/" && !name.endsWith("index.html")) {
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="${name}">${name}</a>`;
+            fileList.appendChild(li);
+          }
+        });
+      } catch (err) {
+        fileList.innerHTML = "<li>حدث خطأ أثناء تحميل الملفات.</li>";
+      }
+    }
+
+    listFiles();
+  </script>
+</body>
+</html>
